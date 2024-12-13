@@ -22,7 +22,7 @@
         }
     }"
     x-init="calculateDimensions(); loading = false"
-    :class="`relative min-w-[${minWidth}px] max-w-[${maxWidth}px] bg-black rounded-lg overflow-hidden shadow-lg flex-shrink-0`"
+    :class="`relative w-[${maxWidth}px] bg-black rounded-lg overflow-hidden shadow-lg flex-shrink-0`"
     @mouseenter="if ($refs.video) { $refs.video.play(); playing = true; } else { playing = true; }"
     @mouseleave="if ($refs.video) { $refs.video.pause(); playing = false; $refs.video.currentTime = 0; } else { playing = false; }">
 

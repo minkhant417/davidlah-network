@@ -51,9 +51,11 @@
         </button>
 
         <!-- Start Now Button -->
-        <button class="px-4 py-2 rounded-lg bg-white text-black font-bold hover:bg-gray-100">
-            Start Now
-        </button>
+        <a href="{{ route('home') }}">
+            <button class="px-4 py-2 rounded-lg bg-white text-black font-bold hover:bg-gray-100">
+                Start Now
+            </button>
+        </a>
 
         <!-- Hamburger Button (for Mobile) -->
         <button @click="openNavMobile = !openNavMobile" class="lg:hidden text-white hover:text-gray-300">

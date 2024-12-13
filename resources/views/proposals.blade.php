@@ -21,10 +21,32 @@
 
                 <!-- Other Content Section -->
                 <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
-                    <div class="bg-gray-300 h-80 rounded"></div>
-                    <div class="bg-gray-300 h-80 rounded"></div>
-                    <div class="bg-gray-300 h-80 rounded"></div>
-                    <div class="bg-gray-300 h-80 rounded"></div>
+                    @for ($i = 0; $i < 5; $i++)
+                        <div class="card bg-gray-200 p-4 rounded-lg">
+                            <h2 class="text-lg font-bold mb-4">Revolutionizing Delivery Services: Investment</h2>
+                            <p class="text-sm text-gray-500 mb-4">We are launching an innovative delivery service
+                                designed
+                                to meet the rising demand for fast, reliable, and customer-centric logistics. Our model
+                                integrates advanced technology, optimized routes, and a scalable infrastructure to
+                                ensure
+                                efficiency and satisfaction. With a rapidly grow...
+                            </p>
+                            <div class="flex justify-between">
+                                <div class="flex items-center mb-4">
+                                    <div class="flex items-center px-1 relative">
+                                        <div class="bg-gray-400 w-8 h-8 rounded-full mr-[-20px] z-40"></div>
+                                        <div class="bg-gray-500 w-8 h-8 rounded-full mr-[-20px] z-30"></div>
+                                        <div class="bg-gray-600 w-8 h-8 rounded-full mr-[-20px] z-20"></div>
+                                        <div class="bg-gray-700 w-8 h-8 rounded-full z-10"></div>
+                                    </div>
+                                    <p class="text-sm text-gray-500">1 more needed</p>
+                                </div>
+                                <button class="bg-gray-400 hover:bg-gray-500 text-black px-4 rounded">
+                                    Invest
+                                </button>
+                            </div>
+                        </div>
+                    @endfor
                 </div>
             </main>
 

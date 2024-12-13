@@ -17,9 +17,11 @@ button_text="Start Now"
             <h1 class="text-4xl lg:text-6xl font-bold leading-tight">
                 {!! $title !!}
             </h1>
-            <button
-                class="mt-6 px-6 py-3 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition duration-300">
-                {{ $buttonText }}
+            <a href="{{ route('home') }}">
+                <button
+                    class="mt-6 px-6 py-3 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition duration-300">
+                    {{ $buttonText }}
             </button>
+            </a>
         </div>
     </div>
